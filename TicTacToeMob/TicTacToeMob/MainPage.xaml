@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TicTacToeMob.MainPage">
+    <ContentPage.Resources>
+        <Style TargetType="Button">
+            
+           
+            <Setter Property="FontSize" Value="75"/>
+        </Style>
+    </ContentPage.Resources>
+    <Grid x:Name="Container">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Button Clicked="Button_Click" x:Name="Button0_0" Grid.Column="0" Grid.Row="0" Text="X"/>
+        <Button Clicked="Button_Click" x:Name="Button1_0" Grid.Column="1" Grid.Row="0" Text="O"/>
+        <Button Clicked="Button_Click" x:Name="Button2_0" Grid.Column="2" Grid.Row="0"/>
+        <Button Clicked="Button_Click" x:Name="Button0_1" Grid.Column="0" Grid.Row="1"/>
+        <Button Clicked="Button_Click" x:Name="Button1_1" Grid.Column="1" Grid.Row="1"/>
+        <Button Clicked="Button_Click" x:Name="Button2_1" Grid.Column="2" Grid.Row="1"/>
+        <Button Clicked="Button_Click" x:Name="Button0_2" Grid.Column="0" Grid.Row="2"/>
+        <Button Clicked="Button_Click" x:Name="Button1_2" Grid.Column="1" Grid.Row="2"/>
+        <Button Clicked="Button_Click" x:Name="Button2_2" Grid.Column="2" Grid.Row="2"/>
+
+    </Grid>
+</ContentPage>
